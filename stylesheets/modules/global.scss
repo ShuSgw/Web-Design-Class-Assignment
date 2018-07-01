@@ -1,0 +1,33 @@
+html {
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    body {
+        background: url("#{$img_path}back.gif");
+        position: relative;
+        &::before {
+            background-color: rgba(250, 250, 250, .8);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: '';
+            z-index: -2;
+        }
+        a {
+            text-decoration: none;
+        }
+        p {
+            margin: .5em 0;
+        }
+        header {
+            height: 100vh;
+            position: relative;
+            nav {
+                position: fixed;
+                top: 0;
+            }
+        }
+        section {}
+    }
+}

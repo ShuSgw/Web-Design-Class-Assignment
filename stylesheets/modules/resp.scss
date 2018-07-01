@@ -1,0 +1,68 @@
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+        nav {
+            position: relative;
+            .fas {
+                display: block;
+                text-align: right;
+                font-size: 5em;
+                padding: .5em;
+                color: white;
+            }
+            .fa-phone-volume {
+                position: absolute;
+                top: 0;
+            }
+            #callNav {
+                display: none;
+            }
+            #navMenu {
+                display: none;
+            }
+            ul {
+                font-size: 2em;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-flow: column;
+                list-style-type: none;
+                li {
+                    #sub {
+                        position: static;
+                        li {
+                            a {
+                                font-size: .4em;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            a {
+                padding: 2em 1em;
+            }
+        }
+        section {
+            height: 250px;
+            .container {
+                width: 95%;
+                grid-template-rows: 8em 1fr;
+                h4 {
+                    font-size: 2em;
+                }
+                h5 {
+                    font-size: 2em;
+                }
+                img {
+                    width: 500px;
+                }
+            }
+            &:nth-of-type(odd) {
+                .container {
+                    grid-template-rows: 8em 1fr;
+                }
+            }
+        }
+    }
+}
